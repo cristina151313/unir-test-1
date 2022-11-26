@@ -97,7 +97,7 @@ pipeline {
             when { 
                 beforeAgent true
                 allOf {
-                    equals expected: 'master', actual: BRANCH_NAME
+                    equals expected: 'main', actual: BRANCH_NAME
                     equals expected: 'SUCCESS', actual: currentBuild.currentResult
                 }
             }
@@ -123,7 +123,7 @@ pipeline {
             when { 
                 beforeAgent true
                 allOf {
-                    equals expected: 'master', actual: BRANCH_NAME
+                    equals expected: 'main', actual: BRANCH_NAME
                     equals expected: 'SUCCESS', actual: currentBuild.currentResult
                 }
             }
